@@ -12474,7 +12474,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  z-index: 30;
 }
 .header__logo {
   display: flex;
@@ -12528,7 +12528,7 @@ ul {
   transition: All 0.3s;
 }
 .header__btn-buy:hover {
-  background-color: #fff;
+  background-color: transparent;
   color: #F7931A;
 }
 .header .burger__menu {
@@ -12625,16 +12625,17 @@ ul {
   height: 100%;
   background-color: #1B1818;
   position: fixed;
-  top: 50px;
+  top: 0;
   left: -280px;
   padding: 10px;
+  padding-top: 90px;
   transition: left 0.3s ease-in-out;
   z-index: 100;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #fff;
   transition: all 0.5s;
-  z-index: 200;
+  z-index: 20;
 }
 #sidebar .sidebar_menu li a:hover {
   color: #FF9A0A;
@@ -12816,6 +12817,7 @@ ul {
   z-index: 10;
 }
 .how-bitcoin__items .bitcoin-item__icon {
+  width: 90px;
   margin: auto;
   margin-bottom: 15px;
 }
@@ -12827,6 +12829,11 @@ ul {
   line-height: 1.2;
   width: 80%;
   margin: auto;
+}
+.how-bitcoin__items .bitcoin-item:nth-child(2) .bitcoin-item__icon {
+  width: 80px;
+  margin: auto;
+  margin-bottom: 15px;
 }
 .how-bitcoin__items .bitcoin-item:nth-child(5n+4) {
   justify-content: flex-end;
@@ -13328,6 +13335,18 @@ ul {
   }
   .footer {
     padding: 30px 20px;
+  }
+  .footer__icons-social {
+    margin-bottom: 30px;
+  }
+  .footer__icons-social {
+    margin-bottom: 30px;
+  }
+  .footer__icons-compani {
+    margin-bottom: 30px;
+  }
+  .footer__menuContainer {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -13850,6 +13869,7 @@ ul {
 }
 .map-dark__img-vidoe img {
   width: 100%;
+  border-radius: 35px;
 }
 .map-dark__h2 {
   margin-bottom: 30px;
@@ -13953,8 +13973,8 @@ ul {
     padding: 20px;
     margin-bottom: 10px;
   }
-  .map-dark__img-vidoe {
-    display: none;
+  .map-dark__img-vidoe img {
+    border-radius: 25px;
   }
   .map-dark .caca {
     display: block;
@@ -13965,6 +13985,11 @@ ul {
   }
   .map-dark .dark-section {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .map-dark__img-vidoe img {
+    border-radius: 20px;
   }
 }
 .items {
@@ -14011,6 +14036,7 @@ ul {
 }
 .items__img {
   margin-bottom: 30px;
+  border-radius: 40px;
 }
 .items__h5 {
   color: #F7931A;
@@ -14135,6 +14161,14 @@ ul {
 @media (max-width: 576px) {
   .items {
     padding: 20px;
+  }
+  .items__img {
+    border-radius: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .items__img {
+    border-radius: 25px;
   }
 }
 .why-us {
@@ -14407,12 +14441,17 @@ ul {
   width: 58px;
   height: 58px;
   border: 2px solid #F7931A;
-  background-color: #F7F7F7;
+  background-color: #FFFEFE;
   border-radius: 50%;
   font-size: 24px;
   font-weight: 700;
   color: #F7931A;
   z-index: 10;
+  transition: all 0.3s;
+}
+.how-start__item span:hover {
+  background-color: #F7931A;
+  color: #FFFEFE;
 }
 .how-start__item span::after {
   content: "";
@@ -14422,7 +14461,7 @@ ul {
   width: 20px;
   height: 4px;
   transform: translateY(-4px);
-  background-color: #F9F9F9;
+  background-color: #FFFEFE;
   z-index: -10;
 }
 .how-start__item span::before {
@@ -14433,7 +14472,7 @@ ul {
   width: 20px;
   height: 4px;
   transform: translateY(-4px);
-  background-color: #F9F9F9;
+  background-color: #FFFEFE;
   z-index: -10;
 }
 .how-start__item p {
@@ -14483,7 +14522,7 @@ ul {
     left: 26px;
     width: 4px;
     height: 6px;
-    background-color: #F7F8F8;
+    background-color: #FFFEFE;
   }
   .how-start__item span::before {
     top: 60px;
@@ -14491,7 +14530,7 @@ ul {
     width: 4px;
     height: 8px;
     transform: translateY(-4px);
-    background-color: #F7F8F8;
+    background-color: #FFFEFE;
   }
   .how-start__item p {
     width: 90%;
@@ -14662,6 +14701,18 @@ ul {
   }
   .footer {
     padding: 30px 20px;
+  }
+  .footer__icons-social {
+    margin-bottom: 30px;
+  }
+  .footer__icons-social {
+    margin-bottom: 30px;
+  }
+  .footer__icons-compani {
+    margin-bottom: 30px;
+  }
+  .footer__menuContainer {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -14943,6 +14994,7 @@ ul {
   margin-bottom: 60px;
 }
 .risk-factors__item img {
+  width: 80px;
   margin-right: 20px;
 }
 .risk-factors__h2 {
@@ -15382,6 +15434,7 @@ ul {
   margin-bottom: 20px;
 }
 .cryptosmart__icon {
+  width: 100px;
   margin: auto;
   margin-bottom: 15px;
 }
@@ -16214,6 +16267,7 @@ ul {
   margin: auto;
 }
 .hash-power__img {
+  width: 80px;
   margin-right: 20px;
 }
 .hash-power__p {
@@ -16330,6 +16384,7 @@ ul {
 }
 .trans-items__img {
   position: absolute;
+  width: 72px;
   right: 15px;
   top: 20px;
 }
@@ -16998,6 +17053,10 @@ ul {
 .launchpad__img {
   border-radius: 40px;
   width: 100%;
+}
+.launchpad__item-img {
+  display: flex;
+  align-items: center;
 }
 .launchpad__h2 {
   margin-bottom: 20px;
