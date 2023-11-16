@@ -13367,16 +13367,15 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
-.pizda {
-  z-index: 100;
-}
-
 html, body {
-  position: relative;
   min-height: 100%;
+  overflow-x: hidden;
   font-family: "Montserrat";
   font-weight: 400;
-  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
 }
 
 .main {
@@ -13704,23 +13703,23 @@ ul {
 }
 .how-bitcoin__bg_iso-6 {
   position: absolute;
-  width: 300px;
-  top: 1250px;
-  left: 240px;
+  width: 150px;
+  top: 1300px;
+  left: 340px;
   position: absolute;
   transform: rotate(55deg);
 }
 .how-bitcoin__bg_iso-7 {
   position: absolute;
   width: 150px;
-  top: 950px;
+  top: 800px;
   left: 30px;
   position: absolute;
 }
 .how-bitcoin__bg_iso-8 {
   position: absolute;
-  width: 300px;
-  top: 900px;
+  width: 200px;
+  top: 1100px;
   left: 10px;
   position: absolute;
   opacity: 0.7;
@@ -13869,6 +13868,9 @@ ul {
 @media (max-width: 576px) {
   .how-bitcoin {
     margin-bottom: 40px;
+  }
+  .how-bitcoin__h2 {
+    margin-bottom: 35px;
   }
   .how-bitcoin__items::after {
     display: none;
@@ -14081,9 +14083,9 @@ ul {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../img/arrow_down.svg");
+  background-image: url("../img/arrow_down.png");
   background-repeat: no-repeat;
-  background-position: right 10px top 20px;
+  background-position: right 15px top 20px;
   background-size: 16px;
   cursor: pointer;
   transition: all 0.5s;
@@ -14094,9 +14096,9 @@ ul {
 .faq-section .questions-attribute .questions-attribute-label {
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
   font-weight: 600;
   color: #000;
+  width: 97%;
 }
 .faq-section .questions-attribute .questions-attribute-label span {
   font-size: 16px;
@@ -14123,9 +14125,12 @@ ul {
     margin-top: 30px;
   }
   .faq-section .questions-attribute .questions-attribute-options .questions-h6 {
-    font-size: 16px;
+    font-size: 14px;
   }
   .faq-section .questions-attribute .questions-attribute-options p {
+    font-size: 14px;
+  }
+  .faq-section .questions-attribute .questions-attribute-label span {
     font-size: 14px;
   }
 }
@@ -15039,6 +15044,10 @@ ul {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
+  transition: color 0.3s;
+}
+.items__btn a:hover {
+  color: #F7931A;
 }
 
 @media (max-width: 1400px) {
@@ -15946,7 +15955,7 @@ ul {
 .how-text {
   position: relative;
   margin-top: -30px;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 .how-text__isometric-mobile {
   display: none;
@@ -16023,7 +16032,24 @@ ul {
   line-height: 2; /* 32.144px */
 }
 
+@media (max-width: 992px) {
+  .how-text {
+    margin-top: -30px;
+    margin-bottom: 40px;
+  }
+  .how-text__p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .how-text {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 600px) {
+  .how-text {
+    margin-bottom: 20px;
+  }
   .how-text__isometric-mobile {
     display: block;
   }
@@ -16114,13 +16140,6 @@ ul {
   }
 }
 @media (max-width: 992px) {
-  .how-text {
-    margin-top: -30px;
-    margin-bottom: 40px;
-  }
-  .how-text__p {
-    font-size: 14px;
-  }
   .risk-factors__accent-container {
     width: 65%;
     font-size: 14px;
@@ -17933,26 +17952,24 @@ ul {
 }
 .stady__bg_iso-2 {
   position: absolute;
-  width: 140px;
-  top: 580px;
-  left: 120px;
-  position: absolute;
+  width: 100px;
+  top: 520px;
+  left: 20px;
 }
 .stady__bg_iso-4 {
   position: absolute;
   width: 120px;
   top: 250px;
   left: 250px;
-  position: absolute;
   transform: rotate(-145deg);
 }
 .stady__bg_iso-5 {
-  position: absolute;
-  width: 250px;
-  top: 750px;
-  left: 0;
+  width: 200px;
+  top: 1250px;
+  left: 100px;
   position: absolute;
   transform: rotate(145deg);
+  opacity: 0.7;
 }
 .stady__item {
   display: flex;
@@ -18048,6 +18065,9 @@ ul {
 @media (max-width: 576px) {
   .stady {
     margin-bottom: 30px;
+  }
+  .stady__isometric-mobile {
+    display: block;
   }
   .stady__img {
     width: 90%;
