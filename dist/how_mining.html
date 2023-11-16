@@ -11,21 +11,24 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
       </style>
-    <link rel="stylesheet" href="css/style.css?_v=20231116170825" >
+    <link rel="stylesheet" href="css/style.css?_v=20231116233129" >
     <title>How mining</title>
 </head>
 
 <body id="how_mining">
-    <!-- particlesjs BG =======================================-->
-    <div id="particles-js"></div> 
-    <div class="bg bg_first"></div>
-    <div class="bg bg_second"></div>
 
-    <!-- Header ==============================================-->
-    
+     <!-- wrapper --> 
+     <div class="wrapper"> 
+
+        <!-- particlesjs BG =======================================-->
+        <div id="particles-js"></div> 
+        <div class="bg"></div>
+
+        <!-- Header ==============================================-->
+        
 
 <header class="header">
-    <div class="burger__menu"  id="burger__menu" class="burger__menu">
+    <div class="burger__menu"  id="burger__menu">
         <span></span>
         <span></span>
         <span></span>
@@ -53,9 +56,15 @@
     </div>
             
 </header>
-    <!-- menu mobile-->
-    
+        <!-- menu mobile-->
+        
 <div  id="sidebar">
+
+    <div class="burger__menu-2"  id="burger__menu-2">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <ul class="sidebar_menu">
         <li class="header-nav__li header-nav__li__active"><a href="index.html">Home</a></li>
         <li class="header-nav__li"><a href="how_mining.html">How mining works</a></li>
@@ -64,81 +73,90 @@
         <li class="header-nav__li"><a href="about.html">About Us</a></li>
         <li class="header-nav__li"><a href="how_buy.html">How to Buy BHP</a></li>
     </ul>
+
+    <h3 class="h3  sidebar__h3">Subscribe to our social networks</h3>
+    <div class="sidebar__icons">
+        <a href="https://www.facebook.com/" target="_blank" title="facebook icon"><img src="./img/icons_footer/fb_i.svg"></a>
+        <a href="https://web.telegram.org/" target="_blank" title="telegram link"><img src="./img/icons_footer/telegram_i.svg"></a>
+        <a href="https://twitter.com/" target="_blank" title="twitter link"><img src="./img/icons_footer/twitt_i.svg"></a>
+        <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>              
+    </div>
 </div>
 
-    
-    <!--  Main ===============================================-->
-    <div class="main">
 
-        <!-- how-bt ==========================================================-->
-        <section class="how-bt container">
-            <div class="row dark-section how-bt__container">
-                <img class="bg_elips" src="../img/isometric_bg/bg-elips.png" alt=""/>
-                <img class="bg_iso_1" src="../img/isometric_bg/isom_bg_1.png" alt=""/>
-                <img class="bg_iso_2" src="../img/isometric_bg/isom_bg_1.png" alt=""/>
-                <img class="bg_iso_3" src="../img/isometric_bg/isom_bg_2.png" alt=""/>
-                <div class="col-12 md-black-h1 how-bt__h1-container" data-aos="fade-right">
-                    <h2 class="h1 how-bt__h1 "><span> How Bitcoin</span> mining works</h2>
-                </div>
-               
-                <div class="col-lg-8  how-bt__textContainer" data-aos="fade-up">
-                    <h2 class="h1 how-bt__h1 md-none-h1"><span> How Bitcoin</span> mining works</h2>
-                    <p class="how-bt__p">For each block produced miners receive transactions fees and block rewards by the Bitcoin blockchain</p>
-                    <p class="how-bt__p">Electricity and buying the mining super computer equipment are the main costs for the miners</p>
-                    <p class="how-bt__p how-bt__p-mod">On average new blocks are produced every ten minutes</p>
-                    <a target="_blank" class="btn_accent how-bt__btn" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" title="cryptosmart link">Start mining now</a>
-                </div>
-                <div class="how-bt__imgContainer col-12" data-aos="fade-up" data-aos-delay="300">
-                    <picture>   
-                        <source 
-                            type="image/webp" 
-                            srcset="./img/bth_izometric_2.webp"/>
-                        <img class="how-bt__img" src="./img/how-bt.png" alt="how-bt">
-                    </picture>
-                </div>
-            </div>
-        </section><!-- #how-bt -->  
-
-
-
-
-
-        <!-- how-text ==========================================================-->
-        <section class="how-text container">
-            <div class="row">
-                <div class="how-text__isometric-mobile">
-                    <img class="how-text__bg_iso-1" src="./img/isometric_bg/isom_bg_4.png" alt="isometric_bg"/>
-                    <img class="how-text__bg_iso-2" src="./img/isometric_bg/isom_bg_2.png" alt="isometric_bg"/>
-                    <img class="how-text__bg_iso-3" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
-                    <img class="how-text__bg_iso-4" src="./img/isometric_bg/isom_bg_3.png" alt="isometric_bg"/>
-                    <img class="how-text__bg_iso-5" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
-                    <img class="how-text__bg_iso-6" src="./img/isometric_bg/isom_bg_6.png" alt="isometric_bg"/>
-                </div>
-                <p class="col-lg-6 col-12 how-text__p"  data-aos="fade-up" data-aos-delay="200">
-                        Bitcoin mining is the process of validating transactions and adding them to the blockchain ledger by 
-                    solving complex mathematical problems using powerful computers. Miners compete to be the first to solve
-                    the cryptographic puzzle and earn a reward of new bitcoins, as well as transaction fees paid by users.
-                    The difficulty of the hash function is adjusted every 2016 blocks to ensure a consistent block time of ten minutes.
-                    The process of bitcoin mining is designed to ensure that the network remains secure and decentralized.
-                    By requiring miners to solve complex mathematical puzzles, the network ensures that no single entity can control the network or manipulate transactions.
-                </p>
-                <p class="col-lg-6 col-12 how-text__p"  data-aos="fade-up" data-aos-delay="300">
-                        Bitcoin mining requires specialized hardware, known as application-specific integrated circuits (ASICs), 
-                    that are designed to perform the mathematical calculations required for mining as quickly and efficiently as possible. 
-                    These ASICs consume a significant amount of electricity and generate heat, so miners often locate their operations 
-                    in areas with cheap electricity and cool climates. In addition to the block reward, miners also receive transaction 
-                    fees as an incentive to include a user’s transaction in their block. Transaction fees are paid by users as a way
-                     to prioritize their transactions and ensure that they are processed quickly. As the number of transactions on 
-                     the network increases, so do the transaction fees, making mining even more profitable for miners.
-                </p>
-            </div>
-        </section><!-- #how-text -->  
-
-
-
-
-        <!--  how-bitcoin ===================================================================  -->  
         
+        <!--  Main ===============================================-->
+        <div class="main">
+
+            <!-- how-bt ==========================================================-->
+            <section class="how-bt container">
+                <div class="row dark-section how-bt__container">
+                    <img class="bg_elips" src="../img/isometric_bg/bg-elips.png" alt=""/>
+                    <img class="bg_iso_1" src="../img/isometric_bg/isom_bg_1.png" alt=""/>
+                    <img class="bg_iso_2" src="../img/isometric_bg/isom_bg_1.png" alt=""/>
+                    <img class="bg_iso_3" src="../img/isometric_bg/isom_bg_2.png" alt=""/>
+                    <div class="col-12 md-black-h1 how-bt__h1-container" data-aos="fade-right">
+                        <h2 class="h1 how-bt__h1 "><span> How Bitcoin</span> mining works</h2>
+                    </div>
+                
+                    <div class="col-lg-8  how-bt__textContainer" data-aos="fade-up">
+                        <h2 class="h1 how-bt__h1 md-none-h1"><span> How Bitcoin</span> mining works</h2>
+                        <p class="how-bt__p">For each block produced miners receive transactions fees and block rewards by the Bitcoin blockchain</p>
+                        <p class="how-bt__p">Electricity and buying the mining super computer equipment are the main costs for the miners</p>
+                        <p class="how-bt__p how-bt__p-mod">On average new blocks are produced every ten minutes</p>
+                        <a target="_blank" class="btn_accent how-bt__btn" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" title="cryptosmart link">Start mining now</a>
+                    </div>
+                    <div class="how-bt__imgContainer col-12" data-aos="fade-up" data-aos-delay="300">
+                        <picture>   
+                            <source 
+                                type="image/webp" 
+                                srcset="./img/bth_izometric_2.webp"/>
+                            <img class="how-bt__img" src="./img/how-bt.png" alt="how-bt">
+                        </picture>
+                    </div>
+                </div>
+            </section><!-- #how-bt -->  
+
+
+
+
+
+            <!-- how-text ==========================================================-->
+            <section class="how-text container">
+                <div class="row">
+                    <div class="how-text__isometric-mobile">
+                        <img class="how-text__bg_iso-1" src="./img/isometric_bg/isom_bg_4.png" alt="isometric_bg"/>
+                        <img class="how-text__bg_iso-2" src="./img/isometric_bg/isom_bg_2.png" alt="isometric_bg"/>
+                        <img class="how-text__bg_iso-3" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
+                        <img class="how-text__bg_iso-4" src="./img/isometric_bg/isom_bg_3.png" alt="isometric_bg"/>
+                        <img class="how-text__bg_iso-5" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
+                        <img class="how-text__bg_iso-6" src="./img/isometric_bg/isom_bg_6.png" alt="isometric_bg"/>
+                    </div>
+                    <p class="col-lg-6 col-12 how-text__p"  data-aos="fade-up" data-aos-delay="200">
+                            Bitcoin mining is the process of validating transactions and adding them to the blockchain ledger by 
+                        solving complex mathematical problems using powerful computers. Miners compete to be the first to solve
+                        the cryptographic puzzle and earn a reward of new bitcoins, as well as transaction fees paid by users.
+                        The difficulty of the hash function is adjusted every 2016 blocks to ensure a consistent block time of ten minutes.
+                        The process of bitcoin mining is designed to ensure that the network remains secure and decentralized.
+                        By requiring miners to solve complex mathematical puzzles, the network ensures that no single entity can control the network or manipulate transactions.
+                    </p>
+                    <p class="col-lg-6 col-12 how-text__p"  data-aos="fade-up" data-aos-delay="300">
+                            Bitcoin mining requires specialized hardware, known as application-specific integrated circuits (ASICs), 
+                        that are designed to perform the mathematical calculations required for mining as quickly and efficiently as possible. 
+                        These ASICs consume a significant amount of electricity and generate heat, so miners often locate their operations 
+                        in areas with cheap electricity and cool climates. In addition to the block reward, miners also receive transaction 
+                        fees as an incentive to include a user’s transaction in their block. Transaction fees are paid by users as a way
+                        to prioritize their transactions and ensure that they are processed quickly. As the number of transactions on 
+                        the network increases, so do the transaction fees, making mining even more profitable for miners.
+                    </p>
+                </div>
+            </section><!-- #how-text -->  
+
+
+
+
+            <!--  how-bitcoin ===================================================================  -->  
+            
 
         
         <section class="how-bitcoin container">
@@ -217,91 +235,88 @@
 
 
 
-        <section class="risk-factors container">
-            <div class="row">
-                <div class="risk-factors__isometric-mobile">
-                    <img class="risk-factors__bg_iso-1" src="./img/isometric_bg/isom_bg_4.png" alt="isometric_bg"/>
-                    <img class="risk-factors__bg_iso-2" src="./img/isometric_bg/isom_bg_2.png" alt="isometric_bg"/>
-                    <img class="risk-factors__bg_iso-3" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
-                    <img class="risk-factors__bg_iso-4" src="./img/isometric_bg/isom_bg_3.png" alt="isometric_bg"/>
-                    <img class="risk-factors__bg_iso-5" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
-                    <img class="risk-factors__bg_iso-6" src="./img/isometric_bg/isom_bg_6.png" alt="isometric_bg"/>
+            <section class="risk-factors container">
+                <div class="row">
+                    <div class="risk-factors__isometric-mobile">
+                        <img class="risk-factors__bg_iso-1" src="./img/isometric_bg/isom_bg_4.png" alt="isometric_bg"/>
+                        <img class="risk-factors__bg_iso-2" src="./img/isometric_bg/isom_bg_2.png" alt="isometric_bg"/>
+                        <img class="risk-factors__bg_iso-3" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
+                        <img class="risk-factors__bg_iso-4" src="./img/isometric_bg/isom_bg_3.png" alt="isometric_bg"/>
+                        <img class="risk-factors__bg_iso-5" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
+                        <img class="risk-factors__bg_iso-6" src="./img/isometric_bg/isom_bg_6.png" alt="isometric_bg"/>
+                    </div>
+                    <div class="col-12"  data-aos="fade-right">
+                        <h1 class="h2 risk-factors__h2"><span>Bitcoin mining</span> risk factors</h1>
+                    </div>
+                    <div class="col-12" data-aos="fade-up">
+                        <p class="risk-factors__accent-container">
+                            Bitcoin mining is highly competitive and constantly evolving. 
+                            The cost of electricity, hardware, and maintenance can be high,
+                            and the difficulty of the mathematical puzzles can increase rapidly,
+                            making it difficult for individual miners to stay profitable.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
+                        <p>
+                            Price Volatility: The price of bitcoin is highly volatile and can 
+                            fluctuate wildly. This means that the value of the bitcoin rewards 
+                            earned by miners can vary greatly, making it difficult to predict profits accurately.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="150">
+                        <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
+                        <p>
+                            Electricity Costs: Bitcoin mining requires a lot of electricity, and the cost of electricity 
+                            can vary greatly depending on location. If electricity costs are too high, 
+                            it can significantly eat into a miner’s profits.
+                        </p>   
+                    </div>
+                    <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
+                        <p>
+                            Competition: As more miners join the network, the competition for solving blocks increases. 
+                            This can make it harder for individual miners to earn rewards, 
+                            especially if they do not have access to the most powerful and efficient hardware.
+                        </p>                 
+                    </div>
+                    <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="250">
+                        <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
+                        <p>
+                            Hardware Failure: The specialized hardware used for bitcoin mining can be expensive and prone to failure.
+                            If a miner’s hardware fails, it can be costly to replace, and they may lose valuable mining time and rewards.
+                        </p>   
+                    </div>
+                    <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
+                        <p>
+                            Mining Difficulty: The difficulty of mining adjusts every 2016 blocks, making it harder to solve the mathematical 
+                            puzzles required to validate transactions and earn rewards. This means that even if a miner has access to powerful 
+                            hardware, they may not be able to solve blocks quickly enough to stay profitable.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="350">
+                        <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
+                        <p>
+                            Network Attack: The decentralized nature of the bitcoin network makes it vulnerable to a 51% attack.
+                            If a single entity or group of entities controls more than 50% of the network’s computing power,
+                            they could potentially manipulate the blockchain and double-spend coins.
+                        </p>
+                    </div>
+                    <div class="col-12 risk-factors__container-btn" data-aos="fade-up" data-aos-delay="400">
+                        <a target="_blank" class="btn_accent risk-factors__btn" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" title="cryptosmart link">Mine Bitcoins using BHP</a>
+                    </div>
                 </div>
-                <div class="col-12"  data-aos="fade-right">
-                    <h1 class="h2 risk-factors__h2"><span>Bitcoin mining</span> risk factors</h1>
-                </div>
-                <div class="col-12" data-aos="fade-up">
-                    <p class="risk-factors__accent-container">
-                        Bitcoin mining is highly competitive and constantly evolving. 
-                        The cost of electricity, hardware, and maintenance can be high,
-                        and the difficulty of the mathematical puzzles can increase rapidly,
-                        making it difficult for individual miners to stay profitable.
-                    </p>
-                </div>
-                <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
-                    <p>
-                        Price Volatility: The price of bitcoin is highly volatile and can 
-                        fluctuate wildly. This means that the value of the bitcoin rewards 
-                        earned by miners can vary greatly, making it difficult to predict profits accurately.
-                    </p>
-                </div>
-                <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="150">
-                    <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
-                    <p>
-                        Electricity Costs: Bitcoin mining requires a lot of electricity, and the cost of electricity 
-                        can vary greatly depending on location. If electricity costs are too high, 
-                        it can significantly eat into a miner’s profits.
-                    </p>   
-                </div>
-                <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
-                    <p>
-                        Competition: As more miners join the network, the competition for solving blocks increases. 
-                        This can make it harder for individual miners to earn rewards, 
-                        especially if they do not have access to the most powerful and efficient hardware.
-                    </p>                 
-                </div>
-                <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="250">
-                    <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
-                    <p>
-                        Hardware Failure: The specialized hardware used for bitcoin mining can be expensive and prone to failure.
-                        If a miner’s hardware fails, it can be costly to replace, and they may lose valuable mining time and rewards.
-                    </p>   
-                </div>
-                <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="300">
-                    <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
-                    <p>
-                        Mining Difficulty: The difficulty of mining adjusts every 2016 blocks, making it harder to solve the mathematical 
-                        puzzles required to validate transactions and earn rewards. This means that even if a miner has access to powerful 
-                        hardware, they may not be able to solve blocks quickly enough to stay profitable.
-                    </p>
-                </div>
-                <div class="col-lg-6 risk-factors__item" data-aos="fade-up" data-aos-delay="350">
-                    <img src="./img/how_bitcoin/how_bit_5.svg" alt="succes icon">
-                    <p>
-                        Network Attack: The decentralized nature of the bitcoin network makes it vulnerable to a 51% attack.
-                        If a single entity or group of entities controls more than 50% of the network’s computing power,
-                        they could potentially manipulate the blockchain and double-spend coins.
-                    </p>
-                </div>
-                <div class="col-12 risk-factors__container-btn" data-aos="fade-up" data-aos-delay="400">
-                    <a target="_blank" class="btn_accent risk-factors__btn" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" title="cryptosmart link">Mine Bitcoins using BHP</a>
-                </div>
-            </div>
-        </section>
+            </section>
 
 
 
 
 
-    </div> <!--  #Main --> 
+        </div> <!--  #Main --> 
 
-
-
-
-    <!--footer ============================================================================ -->
-    
+        <!--footer ============================================================================ -->
+        
 <footer class="container footer-container ">
     
     <div class="row footer">
@@ -323,8 +338,7 @@
                 <a href="https://www.facebook.com/" target="_blank" title="facebook icon"><img src="./img/icons_footer/fb_i.svg"></a>
                 <a href="https://web.telegram.org/" target="_blank" title="telegram link"><img src="./img/icons_footer/telegram_i.svg"></a>
                 <a href="https://twitter.com/" target="_blank" title="twitter link"><img src="./img/icons_footer/twitt_i.svg"></a>
-                <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>
-                
+                <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>              
             </div>
             <h3 class="h3 footer__h3">Сompany details</h3>
             <div class="footer__icons-compani">
@@ -377,10 +391,8 @@
 </footer>
 
 
+    </div><!-- #wrapper --> 
 
-
-
-
-    <script src="js/app.min.js?_v=20231116170825"></script>
+    <script src="js/app.min.js?_v=20231116233129"></script>
 </body>
 </html>

@@ -13370,12 +13370,12 @@ textarea.form-control-lg {
 html, body {
   min-height: 100%;
   overflow-x: hidden;
-  font-family: "Montserrat";
-  font-weight: 400;
 }
 
 .wrapper {
   position: relative;
+  font-family: "Montserrat";
+  font-weight: 400;
 }
 
 .main {
@@ -13518,7 +13518,6 @@ ul {
   transition: 0.3s all;
 }
 .header .activeBurger {
-  position: relative;
   z-index: 300;
   translate: 0.5s all;
 }
@@ -13592,6 +13591,64 @@ ul {
   color: #fff;
   transition: all 0.5s;
   z-index: 20;
+}
+#sidebar .sidebar__h3 {
+  margin-left: 10px;
+}
+#sidebar .sidebar__icons {
+  display: flex;
+  margin-left: 10px;
+}
+#sidebar .sidebar__icons a {
+  width: 35px;
+  margin-right: 10px;
+}
+#sidebar .burger__menu-2 {
+  display: none;
+  position: relative;
+  width: 20px;
+  height: 18px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+#sidebar .burger__menu-2 span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+#sidebar .burger__menu-2 span:nth-child(1) {
+  display: block;
+  top: 0;
+  transition: 0.3s all;
+}
+#sidebar .burger__menu-2 span:nth-child(2) {
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s all;
+}
+#sidebar .burger__menu-2 span:nth-child(3) {
+  display: block;
+  bottom: 0;
+  transition: 0.3s all;
+}
+#sidebar .activeBurger {
+  z-index: 300;
+  translate: 0.5s all;
+}
+#sidebar .activeBurger span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+#sidebar .activeBurger span:nth-child(2) {
+  opacity: 0;
+}
+#sidebar .activeBurger span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
 }
 #sidebar .sidebar_menu li a:hover {
   color: #FF9A0A;

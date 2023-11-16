@@ -11,21 +11,24 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
       </style>
-    <link rel="stylesheet" href="css/style.css?_v=20231116170825" >
+    <link rel="stylesheet" href="css/style.css?_v=20231116233129" >
     <title>How buy</title>
 </head>
 
 <body id="how_buy">
-    <!-- particlesjs BG =======================================-->
-    <div id="particles-js"></div> 
-    <div class="bg bg_first"></div>
-    <div class="bg bg_second"></div>
 
-    <!-- Header ==============================================-->
-    
+    <!-- wrapper --> 
+    <div class="wrapper"> 
+
+        <!-- particlesjs BG =======================================-->
+        <div id="particles-js"></div> 
+        <div class="bg"></div>
+
+        <!-- Header ==============================================-->
+        
 
 <header class="header">
-    <div class="burger__menu"  id="burger__menu" class="burger__menu">
+    <div class="burger__menu"  id="burger__menu">
         <span></span>
         <span></span>
         <span></span>
@@ -53,9 +56,15 @@
     </div>
             
 </header>
-    <!-- menu mobile-->
-    
+        <!-- menu mobile-->
+        
 <div  id="sidebar">
+
+    <div class="burger__menu-2"  id="burger__menu-2">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <ul class="sidebar_menu">
         <li class="header-nav__li header-nav__li__active"><a href="index.html">Home</a></li>
         <li class="header-nav__li"><a href="how_mining.html">How mining works</a></li>
@@ -64,166 +73,175 @@
         <li class="header-nav__li"><a href="about.html">About Us</a></li>
         <li class="header-nav__li"><a href="how_buy.html">How to Buy BHP</a></li>
     </ul>
+
+    <h3 class="h3  sidebar__h3">Subscribe to our social networks</h3>
+    <div class="sidebar__icons">
+        <a href="https://www.facebook.com/" target="_blank" title="facebook icon"><img src="./img/icons_footer/fb_i.svg"></a>
+        <a href="https://web.telegram.org/" target="_blank" title="telegram link"><img src="./img/icons_footer/telegram_i.svg"></a>
+        <a href="https://twitter.com/" target="_blank" title="twitter link"><img src="./img/icons_footer/twitt_i.svg"></a>
+        <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>              
+    </div>
 </div>
 
-        
-    <!--  Main ===============================================-->
-    <div class="main">
 
-        <!-- how-buy-bhp ==========================================================-->
-        <section class="how-buy-bhp container ">
-            <div class="row dark-section">
-                <img class="bg_elips" src="../img/isometric_bg/bg-elips.png" alt="bg-elips"/>
-                <img class="bg_iso_1" src="../img/isometric_bg/isom_bg_1.png" alt="isom_bg"/>
-                <img class="bg_iso_2" src="../img/isometric_bg/isom_bg_1.png" alt="isom_bg"/>
-                <img class="bg_iso_3" src="../img/isometric_bg/isom_bg_2.png" alt="isom_bg"/>
-                     
-                <div class="col-lg-6 col-12 how-buy-bhp__container-text" data-aos="fade-up">
-                    <h1 class="h1 how-buy-bhp__h1" data-aos="fade-right"><span>How to buy</span> BHP?</h1>
-                    <p class="how-buy-bhp__p">
-                        BHP is the easiest and most affordable way to mine Bitcoin 
-                        without the burden of physically managing miners.
-                            Find out how to buy BHP or sign up for one of 
-                            our upcoming webinars if you have questions
-                    </p>             
-                  
-                    <ul class="stat-container">
-                        <li class="stat-container__item">
-                            <div class="stat-container__numb">+<span class="minted">7800</div>
-                            <span class="stat-container__text">BHP tokens minted</span>
-                        </li>
-                        <li class="stat-container__item">
-                            <div class="stat-container__numb">+<span class="tokens">7800</div>
-                            <span class="stat-container__text">Terahash backing
-                                the tokens</span>
-                        </li>
-                        <li class="stat-container__item">
-                            <div class="stat-container__numb miners">84</div>
-                            <span class="stat-container__text">Miners in Iceland 
-                                USA Canada</span>
-                        </li>
-                    </ul>
-                    <div class="btns-container">
+            
+        <!--  Main ===============================================-->
+        <div class="main">
+
+            <!-- how-buy-bhp ==========================================================-->
+            <section class="how-buy-bhp container ">
+                <div class="row dark-section">
+                    <img class="bg_elips" src="../img/isometric_bg/bg-elips.png" alt="bg-elips"/>
+                    <img class="bg_iso_1" src="../img/isometric_bg/isom_bg_1.png" alt="isom_bg"/>
+                    <img class="bg_iso_2" src="../img/isometric_bg/isom_bg_1.png" alt="isom_bg"/>
+                    <img class="bg_iso_3" src="../img/isometric_bg/isom_bg_2.png" alt="isom_bg"/>
+                        
+                    <div class="col-lg-6 col-12 how-buy-bhp__container-text" data-aos="fade-up">
+                        <h1 class="h1 how-buy-bhp__h1" data-aos="fade-right"><span>How to buy</span> BHP?</h1>
+                        <p class="how-buy-bhp__p">
+                            BHP is the easiest and most affordable way to mine Bitcoin 
+                            without the burden of physically managing miners.
+                                Find out how to buy BHP or sign up for one of 
+                                our upcoming webinars if you have questions
+                        </p>             
+                    
+                        <ul class="stat-container">
+                            <li class="stat-container__item">
+                                <div class="stat-container__numb">+<span class="minted">7800</div>
+                                <span class="stat-container__text">BHP tokens minted</span>
+                            </li>
+                            <li class="stat-container__item">
+                                <div class="stat-container__numb">+<span class="tokens">7800</div>
+                                <span class="stat-container__text">Terahash backing
+                                    the tokens</span>
+                            </li>
+                            <li class="stat-container__item">
+                                <div class="stat-container__numb miners">84</div>
+                                <span class="stat-container__text">Miners in Iceland 
+                                    USA Canada</span>
+                            </li>
+                        </ul>
+                        <div class="btns-container">
+                            <a target="_black" title="cryptosmart link" class="btn_accent btn_mr" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" >Buy BHP on Cryptosmart</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 how-buy-bhp__container-img" data-aos="fade-up" data-aos-delay="200">
+                        <picture>
+                            <source 
+                            type="image/webp" 
+                            srcset="./img/buy_img_992.webp"
+                            media="(max-width: 992px)" />
+                        <source 
+                            type="image/webp" 
+                            srcset="./img/buy_img_1400.webp"
+                            media="(max-width: 1400px)" />
+                        <source 
+                            type="image/webp" 
+                            srcset="./img/buy_img_min.webp"
+                            media="(min-width: 1401px)" />
+
+                            <img  class="how-buy-bhp__bigImg" src="./img/buy_img_min.png" alt="bhp img"/>
+                        </picture>
+                    </div>
+
+                </div>
+            </section><!--  #how-buy-bhp -->  
+            
+
+
+    
+            
+
+            <!--  stady ==========================================================================-->
+            <section class="container stady">
+                <div class="row">
+                    <div class="stady__isometric-mobile">
+                        <img class="stady__bg_iso-3" src="./img/isometric_bg/isom_bg_2.png" alt="isometric_bg"/>
+                        <img class="stady__bg_iso-1" src="./img/isometric_bg/isom_bg_4.png" alt="isometric_bg"/>
+                        <img class="stady__bg_iso-2" src="./img/isometric_bg/isom_bg_3.png" alt="isometric_bg"/>
+                        <img class="stady__bg_iso-4" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
+                        <img class="stady__bg_iso-5" src="./img/isometric_bg/isom_bg_6.png" alt="isometric_bg"/>
+                    </div>
+
+                    <div class="col-12 stady__h2-container" data-aos="fade-right" data-aos-delay="200">
+                        <h2 class="h2  stady__h2"><span>Buy BHP now</span> in 3 simple steps</h2>
+                    </div>
+
+                    <div class="col-md-6 stady__item  stady__item-1" data-aos="fade-right">
+                        <picture>
+                            <source 
+                                type="image/webp" 
+                                srcset="./img/bth_izometric_1.webp" />
+                            <img class="stady__img" src="./img/bth_izometric_1.png" alt="img_izometric"/>
+                        </picture>
+                    </div>
+
+                    <div class="col-md-6  stady__item stady__item-2" data-aos="fade-left" data-aos-delay="100">   
+                        <h3 class="h3 stady__h3">
+                            <span>First</span> step
+                        </h3>
+                        <p class="stady__p">  
+                            At this launch step you can buy BHP at a predetermined and advantageous price,
+                            acquire your computing power (and related yield) now, and IBX will invest the proceeds
+                            from the sale of BHP in the expansion of its mining farms, increasing the available
+                            computing power available to new investors.</p>
+                    </div>
+
+
+
+                    <div class="col-md-6 stady__item stady__item-3" data-aos="fade-right" data-aos-delay="100">
+                        <h3 class="h3 stady__h3">
+                            <span>Second</span> step
+                        </h3>
+                        <p class="stady__p">
+                            At the end of this launch phase the token will be listed on Cryptosmart 
+                            (and, over time, on other international exchanges) allowing all BHP holders to exit 
+                            their investment if they wish or to purchase new BHPs at what will be the token's 
+                            market price, at that point variable and dependent on the law of supply and demand.</p>
+                    </div>
+                    <div class="col-md-6  stady__item stady__item-4" data-aos="fade-left" data-aos-delay="150">
+                        <picture>
+                            <source 
+                                type="image/webp" 
+                                srcset="./img/bth_izometric_2.webp" />
+                            <img class="stady__img" src="./img/bth_izometric_2.png" alt="img_izometric"/>
+                        </picture>   
+                    </div>
+
+
+
+                    <div class="col-md-6  stady__item stady__item-5" data-aos="fade-right" data-aos-delay="200">
+                        <picture>
+                            <source 
+                                type="image/webp" 
+                                srcset="./img/bth_izometric_3.webp" />
+                            <img class="stady__img" src="./img/bth_izometric_3.png" alt="img_izometric"/>
+                        </picture>  
+                    </div>
+
+                    <div class="col-md-6  stady__item stady__item-6" data-aos="fade-left" data-aos-delay="250">   
+                        <h3 class="h3 stady__h3">
+                            <span>Third</span> step
+                        </h3>
+                        <p class="stady__p">
+                            If you understand how BHP works and the opportunity it gives you to access mining through
+                            the simple purchase of a token, create your account on Cryptosmart 
+                            (or log in if you already have one) and visit the Launchpad section to purchase your BHPs.</p>
+                    </div>
+
+                    <div class="stady__btns-container stady__item stady__item-7"  data-aos="fade-up">
                         <a target="_black" title="cryptosmart link" class="btn_accent btn_mr" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" >Buy BHP on Cryptosmart</a>
                     </div>
+
+
                 </div>
-
-                <div class="col-lg-6 col-12 how-buy-bhp__container-img" data-aos="fade-up" data-aos-delay="200">
-                    <picture>
-                        <source 
-                        type="image/webp" 
-                        srcset="./img/buy_img_992.webp"
-                        media="(max-width: 992px)" />
-                    <source 
-                        type="image/webp" 
-                        srcset="./img/buy_img_1400.webp"
-                        media="(max-width: 1400px)" />
-                    <source 
-                        type="image/webp" 
-                        srcset="./img/buy_img_min.webp"
-                        media="(min-width: 1401px)" />
-
-                        <img  class="how-buy-bhp__bigImg" src="./img/buy_img_min.png" alt="bhp img"/>
-                    </picture>
-                </div>
-
-            </div>
-        </section><!--  #how-buy-bhp -->  
-        
-
-
-   
-        
-
-        <!--  stady ==========================================================================-->
-        <section class="container stady">
-            <div class="row">
-                <div class="stady__isometric-mobile">
-                    <img class="stady__bg_iso-3" src="./img/isometric_bg/isom_bg_2.png" alt="isometric_bg"/>
-                    <img class="stady__bg_iso-1" src="./img/isometric_bg/isom_bg_4.png" alt="isometric_bg"/>
-                    <img class="stady__bg_iso-2" src="./img/isometric_bg/isom_bg_3.png" alt="isometric_bg"/>
-                    <img class="stady__bg_iso-4" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
-                    <img class="stady__bg_iso-5" src="./img/isometric_bg/isom_bg_6.png" alt="isometric_bg"/>
-                </div>
-
-                <div class="col-12 stady__h2-container" data-aos="fade-right" data-aos-delay="200">
-                    <h2 class="h2  stady__h2"><span>Buy BHP now</span> in 3 simple steps</h2>
-                </div>
-
-                <div class="col-md-6 stady__item  stady__item-1" data-aos="fade-right">
-                    <picture>
-                        <source 
-                            type="image/webp" 
-                            srcset="./img/bth_izometric_1.webp" />
-                        <img class="stady__img" src="./img/bth_izometric_1.png" alt="img_izometric"/>
-                    </picture>
-                </div>
-
-                <div class="col-md-6  stady__item stady__item-2" data-aos="fade-left" data-aos-delay="100">   
-                    <h3 class="h3 stady__h3">
-                        <span>First</span> step
-                    </h3>
-                    <p class="stady__p">  
-                        At this launch step you can buy BHP at a predetermined and advantageous price,
-                        acquire your computing power (and related yield) now, and IBX will invest the proceeds
-                        from the sale of BHP in the expansion of its mining farms, increasing the available
-                        computing power available to new investors.</p>
-                </div>
+            </section><!--  #stady  -->
 
 
 
-                <div class="col-md-6 stady__item stady__item-3" data-aos="fade-right" data-aos-delay="100">
-                    <h3 class="h3 stady__h3">
-                        <span>Second</span> step
-                    </h3>
-                    <p class="stady__p">
-                        At the end of this launch phase the token will be listed on Cryptosmart 
-                        (and, over time, on other international exchanges) allowing all BHP holders to exit 
-                        their investment if they wish or to purchase new BHPs at what will be the token's 
-                        market price, at that point variable and dependent on the law of supply and demand.</p>
-                </div>
-                <div class="col-md-6  stady__item stady__item-4" data-aos="fade-left" data-aos-delay="150">
-                    <picture>
-                        <source 
-                            type="image/webp" 
-                            srcset="./img/bth_izometric_2.webp" />
-                        <img class="stady__img" src="./img/bth_izometric_2.png" alt="img_izometric"/>
-                    </picture>   
-                </div>
-
-
-
-                <div class="col-md-6  stady__item stady__item-5" data-aos="fade-right" data-aos-delay="200">
-                    <picture>
-                        <source 
-                            type="image/webp" 
-                            srcset="./img/bth_izometric_3.webp" />
-                        <img class="stady__img" src="./img/bth_izometric_3.png" alt="img_izometric"/>
-                    </picture>  
-                </div>
-
-                <div class="col-md-6  stady__item stady__item-6" data-aos="fade-left" data-aos-delay="250">   
-                    <h3 class="h3 stady__h3">
-                        <span>Third</span> step
-                    </h3>
-                    <p class="stady__p">
-                        If you understand how BHP works and the opportunity it gives you to access mining through
-                         the simple purchase of a token, create your account on Cryptosmart 
-                         (or log in if you already have one) and visit the Launchpad section to purchase your BHPs.</p>
-                </div>
-
-                <div class="stady__btns-container stady__item stady__item-7"  data-aos="fade-up">
-                    <a target="_black" title="cryptosmart link" class="btn_accent btn_mr" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" >Buy BHP on Cryptosmart</a>
-                </div>
-
-
-            </div>
-        </section><!--  #stady  -->
-
-
-
-        <!--  #faq===================================================================================== -->
-        
+            <!--  #faq===================================================================================== -->
+            
 <!-- faq---------------------------------------------------->
 <section class="container faq-section">
     <div class="row">
@@ -261,7 +279,7 @@
                         corresponding to total terahash of the miner available in stock.
                     </p>
                     <div class="questions-container">
-                        <a class="btn_accent questions-container-btn" href="#" title="Buy BHP on Cryptosmart">Find out more on BHP Whitepaper</a>
+                        <a class="btn_accent questions-container-btn"  href="./files/Whitepaper_BHP_EN.pdf" target="_blank" title="View BHP Whitepaper" >Find out more on BHP Whitepaper</a>
                     </div>
                 
                 </div>
@@ -316,77 +334,74 @@
 
 
 
-        <!--  questions ==========================================================================-->
-        <section class="questions container">    
-            <div class="row dark-section questions__row">
-                <img class="bg_elips" src="../img/isometric_bg/bg-elips.png" alt=""/>
-                <img class="bg_iso_1" src="../img/isometric_bg/isom_bg_1.png" alt=""/>
-                <img class="bg_iso_2" src="../img/isometric_bg/isom_bg_1.png" alt=""/>
-                <img class="bg_iso_3" src="../img/isometric_bg/isom_bg_2.png" alt=""/>
-                <div class="col-lg-6 questions__item-text" data-aos="fade-right">
-                    <h2 class="h2 questions__h2"><span>Still have</span> questions?</h2>
-                    <p class="questions__p">
-                        If, on the other hand, you need to learn more and want to ask questions of the team that developed BHP,
-                         sign up for one of the upcoming webinars for an extended explanation and ask your questions directly.
-                    </p>
-                    <div class="btns-container">
-                        <a target="_black" title="cryptosmart link" class="btn_accent questions__btn" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" >Buy BHP on Cryptosmart</a>
+            <!--  questions ==========================================================================-->
+            <section class="questions container">    
+                <div class="row dark-section questions__row">
+                    <img class="bg_elips" src="../img/isometric_bg/bg-elips.png" alt=""/>
+                    <img class="bg_iso_1" src="../img/isometric_bg/isom_bg_1.png" alt=""/>
+                    <img class="bg_iso_2" src="../img/isometric_bg/isom_bg_1.png" alt=""/>
+                    <img class="bg_iso_3" src="../img/isometric_bg/isom_bg_2.png" alt=""/>
+                    <div class="col-lg-6 questions__item-text" data-aos="fade-right">
+                        <h2 class="h2 questions__h2"><span>Still have</span> questions?</h2>
+                        <p class="questions__p">
+                            If, on the other hand, you need to learn more and want to ask questions of the team that developed BHP,
+                            sign up for one of the upcoming webinars for an extended explanation and ask your questions directly.
+                        </p>
+                        <div class="btns-container">
+                            <a target="_black" title="cryptosmart link" class="btn_accent questions__btn" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" >Buy BHP on Cryptosmart</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 questions__item-img" data-aos="fade-left">
+                        <picture>
+                            <source 
+                                type="image/webp" 
+                                srcset="./img/questions_img.webp"
+                            />
+                            <img class="questions__img" src="./img/questions_img.png" alt="img questions"/>
+                        </picture>  
+                    
                     </div>
                 </div>
-                <div class="col-lg-6 questions__item-img" data-aos="fade-left">
-                    <picture>
-                        <source 
-                            type="image/webp" 
-                            srcset="./img/questions_img.webp"
-                           />
-                           <img class="questions__img" src="./img/questions_img.png" alt="img questions"/>
-                    </picture>  
-                   
+            </section><!--  #questions  -->
+
+
+
+            <!--  countries-map ==========================================================================-->
+            <section class="container countries-map">
+                <div class="row">
+                    <div class="countries-map__isometric-mobile">
+                        <img class="countries-map__bg_iso-1" src="./img/isometric_bg/isom_bg_4.png" alt="isometric_bg"/>
+                        <img class="countries-map__bg_iso-2" src="./img/isometric_bg/isom_bg_3.png" alt="isometric_bg"/>
+                        <img class="countries-map__bg_iso-4" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
+                        <img class="countries-map__bg_iso-5" src="./img/isometric_bg/isom_bg_6.png" alt="isometric_bg"/>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="h2 countries-map__h2" data-aos="fade-right">
+                            <span>Our mining farms are in countries </span>
+                            where electricity is very cheap
+                        </h2>
+                        <p class="countries-map__p" data-aos="fade-up">
+                            Our mining operations are strategically distributed worldwide:
+                            USA (NY, IA), Canada (MB), Iceland, Georgia. We employ top-notch 
+                            tech for efficient cryptocurrency mining.
+                        </p>
+                    </div>
+                    <div class="col-12" data-aos="fade-up">
+                        <img class="countries-map__img" src="./img//map_light.png" alt="map countries"/>
+                    </div>
+                    <div class="col-12" data-aos="fade-up">
+                        <a target="_black" title="cryptosmart link" class="btn_accent countries-map__btn" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" >Buy BHP on Cryptosmart</a>
+                    </div>
                 </div>
-            </div>
-        </section><!--  #questions  -->
-
-
-
-         <!--  countries-map ==========================================================================-->
-        <section class="container countries-map">
-            <div class="row">
-                <div class="countries-map__isometric-mobile">
-                    <img class="countries-map__bg_iso-1" src="./img/isometric_bg/isom_bg_4.png" alt="isometric_bg"/>
-                    <img class="countries-map__bg_iso-2" src="./img/isometric_bg/isom_bg_3.png" alt="isometric_bg"/>
-                    <img class="countries-map__bg_iso-4" src="./img/isometric_bg/isom_bg_5.png" alt="isometric_bg"/>
-                    <img class="countries-map__bg_iso-5" src="./img/isometric_bg/isom_bg_6.png" alt="isometric_bg"/>
-                </div>
-                <div class="col-12">
-                    <h2 class="h2 countries-map__h2" data-aos="fade-right">
-                        <span>Our mining farms are in countries </span>
-                        where electricity is very cheap
-                    </h2>
-                    <p class="countries-map__p" data-aos="fade-up">
-                        Our mining operations are strategically distributed worldwide:
-                         USA (NY, IA), Canada (MB), Iceland, Georgia. We employ top-notch 
-                         tech for efficient cryptocurrency mining.
-                    </p>
-                </div>
-                <div class="col-12" data-aos="fade-up">
-                    <img class="countries-map__img" src="./img//map_light.png" alt="map countries"/>
-                </div>
-                <div class="col-12" data-aos="fade-up">
-                    <a target="_black" title="cryptosmart link" class="btn_accent countries-map__btn" href="https://app.cryptosmart.exchange/signup?ref=bitcoinhash" >Buy BHP on Cryptosmart</a>
-                </div>
-            </div>
-        </section><!--  #countries-map --> 
+            </section><!--  #countries-map --> 
 
 
 
 
-    </div> <!--  #Main --> 
+        </div> <!--  #Main --> 
 
-
-
-
-    <!--footer ============================================================================ -->
-    
+        <!--footer ============================================================================ -->
+        
 <footer class="container footer-container ">
     
     <div class="row footer">
@@ -408,8 +423,7 @@
                 <a href="https://www.facebook.com/" target="_blank" title="facebook icon"><img src="./img/icons_footer/fb_i.svg"></a>
                 <a href="https://web.telegram.org/" target="_blank" title="telegram link"><img src="./img/icons_footer/telegram_i.svg"></a>
                 <a href="https://twitter.com/" target="_blank" title="twitter link"><img src="./img/icons_footer/twitt_i.svg"></a>
-                <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>
-                
+                <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>              
             </div>
             <h3 class="h3 footer__h3">Сompany details</h3>
             <div class="footer__icons-compani">
@@ -461,11 +475,12 @@
     </div>
 </footer>
 
-
+        
+    </div><!-- #wrapper --> 
 
 
 
     
-    <script src="js/app.min.js?_v=20231116170825"></script>
+    <script src="js/app.min.js?_v=20231116233129"></script>
 </body>
 </html>

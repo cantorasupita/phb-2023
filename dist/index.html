@@ -11,23 +11,24 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
       </style>
-    <link rel="stylesheet" href="css/style.css?_v=20231116170825" >
+    <link rel="stylesheet" href="css/style.css?_v=20231116233129" >
     <title>Home</title>
 </head>
 
 <body id="home">
-  
+
+    <!-- wrapper --> 
+    <div class="wrapper">
 
         <!-- particlesjs BG =======================================-->
         <div id="particles-js"></div> 
         <div class="bg"></div>
 
-
         <!-- Header -->
         
 
 <header class="header">
-    <div class="burger__menu"  id="burger__menu" class="burger__menu">
+    <div class="burger__menu"  id="burger__menu">
         <span></span>
         <span></span>
         <span></span>
@@ -58,6 +59,12 @@
         <!-- menu mobile-->
         
 <div  id="sidebar">
+
+    <div class="burger__menu-2"  id="burger__menu-2">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <ul class="sidebar_menu">
         <li class="header-nav__li header-nav__li__active"><a href="index.html">Home</a></li>
         <li class="header-nav__li"><a href="how_mining.html">How mining works</a></li>
@@ -66,7 +73,16 @@
         <li class="header-nav__li"><a href="about.html">About Us</a></li>
         <li class="header-nav__li"><a href="how_buy.html">How to Buy BHP</a></li>
     </ul>
+
+    <h3 class="h3  sidebar__h3">Subscribe to our social networks</h3>
+    <div class="sidebar__icons">
+        <a href="https://www.facebook.com/" target="_blank" title="facebook icon"><img src="./img/icons_footer/fb_i.svg"></a>
+        <a href="https://web.telegram.org/" target="_blank" title="telegram link"><img src="./img/icons_footer/telegram_i.svg"></a>
+        <a href="https://twitter.com/" target="_blank" title="twitter link"><img src="./img/icons_footer/twitt_i.svg"></a>
+        <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>              
+    </div>
 </div>
+
 
 
 
@@ -129,8 +145,8 @@
                         <img data-aos="fade-left" class="bit-big" src="./img/bitcoin_big.png" alt="big bitcoin image">
                         <img class="bit-one" src="./img/mini_bitcoins/bit_min_1.png" alt="big min one">
                         <img class="bit-two" src="./img/mini_bitcoins/bit_min_2.png" alt="big min two">
-                        <img class="bit-three" src="./img/mini_bitcoins/bit_min_3.png" alt="big min three">
-                        <img class="bit-four" src="./img/mini_bitcoins/bit-min_4.png" alt="big min four">
+                        <img class="bit-three" data-aos="fade-up" data-aos-delay="200" src="./img/mini_bitcoins/bit_min_3.png" alt="big min three">
+                        <img class="bit-four" data-aos="fade-right" data-aos-delay="200" src="./img/mini_bitcoins/bit-min_4.png" alt="big min four">
                         <img class="bit-five" src="./img/mini_bitcoins/bit_min_5.png" alt="big min five">
                         <img class="bit-six" src="./img/mini_bitcoins/bit_min_6.png" alt="big min six">
                     </div>
@@ -306,7 +322,7 @@
                                 ensuring its value and potential for Bitcoin mining.
                             </p>
                             <div class="items__btn">
-                                <a href="./files/Whitepaper_BHP_EN.pdf" download="Whitepaper_BHP_EN" title="View BHP Whitepaper" >View BHP Whitepaper</a>
+                                <a href="./files/Whitepaper_BHP_EN.pdf" target="_blank" title="View BHP Whitepaper" >View BHP Whitepaper</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-12 items__item" data-aos="fade-up" data-aos-delay="100">
@@ -523,8 +539,7 @@
                 <a href="https://www.facebook.com/" target="_blank" title="facebook icon"><img src="./img/icons_footer/fb_i.svg"></a>
                 <a href="https://web.telegram.org/" target="_blank" title="telegram link"><img src="./img/icons_footer/telegram_i.svg"></a>
                 <a href="https://twitter.com/" target="_blank" title="twitter link"><img src="./img/icons_footer/twitt_i.svg"></a>
-                <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>
-                
+                <a href="https://www.youtube.com/" target="_blank" title="youtube link"><img src="./img/icons_footer/youtube_i.svg"></a>              
             </div>
             <h3 class="h3 footer__h3">Сompany details</h3>
             <div class="footer__icons-compani">
@@ -577,8 +592,9 @@
 </footer>
 
 
-   
+    </div><!-- #wrapper --> 
+       
 
-    <script src="js/app.min.js?_v=20231116170825"></script>
+    <script src="js/app.min.js?_v=20231116233129"></script>
 </body>
 </html>
